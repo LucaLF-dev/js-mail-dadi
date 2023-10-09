@@ -47,10 +47,12 @@ if (playerNumber == computerNumber) {
     winnerGame = 'Computer Win'
 }
 
-console.log(winnerGame)
+const esitoDOMElement = document.getElementById('esito')
+esitoDOMElement.innerHTML = '<h1>' + winnerGame +  '</h1>'
+
+
 
 } else {
     console.log('accesso negato, non puoi giocare a dadi'); 
 }
-
 
