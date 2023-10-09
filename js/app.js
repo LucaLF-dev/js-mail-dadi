@@ -26,11 +26,7 @@ for (let i = 0; i < lunghezzaArray; i++)  {
 if (isEmailFound === true) {
     console.log('accesso consentito');
 
-} else {
-    console.log('accesso negato'); 
-}
-
-// - creo una variabile per il giocatore:
+    // - creo una variabile per il giocatore:
 //    - genero un numero random da 1 a 6
 const playerNumber = Math.floor(Math.random() * (6 - 1) + 1); 
 console.log(playerNumber);
@@ -50,3 +46,9 @@ if (playerNumber > computerNumber) {
 }
 
 console.log(winnerGame)
+
+} else {
+    console.log('accesso negato, non puoi giocare a dadi'); 
+}
+
+
