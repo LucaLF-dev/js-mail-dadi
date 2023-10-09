@@ -28,21 +28,23 @@ if (isEmailFound === true) {
 
     // - creo una variabile per il giocatore:
 //    - genero un numero random da 1 a 6
-const playerNumber = Math.floor(Math.random() * (6 - 1) + 1); 
-console.log(playerNumber);
+    const playerNumber = Math.floor(Math.random(1) * (6 - 1) + 1); 
+    console.log(playerNumber);
 
 // - creo una variabile per il computer:
 //    - genero un numero random da 1 a 6
-const computerNumber = Math.floor(Math.random() * (6 - 1) + 1); 
-console.log(computerNumber);
+    const computerNumber = Math.floor(Math.random(1) * (6 - 1) + 1); 
+    console.log(computerNumber);
 
 // - stabilire il vincitore, in base a chi fa il punteggio piu alto
-let winnerGame 
+    let winnerGame 
 
-if (playerNumber > computerNumber) {
-    winnerGame = ' Player Win';
+if (playerNumber == computerNumber) {
+    winnerGame = ' Repeat';
+} else if (playerNumber > computerNumber) {
+    winnerGame = ' Player Win'
 } else {
-    winnerGame = ' Computer Win'
+    winnerGame = 'Computer Win'
 }
 
 console.log(winnerGame)
