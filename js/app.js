@@ -6,6 +6,7 @@ console.log(emailUtente)
 const emailsUtenti = ['mamma@gmail.com', 'marta@gmail.com', 'polo@gmail.com', 'festa@gmail.com', 'pollo@gmail.com'] 
 console.log(emailsUtenti)
 
+let isEmailFound = false; // variabile booleano
 //   - confrontiamo l'email dell utente con l'email della lista
 const lunghezzaArray = emailsUtenti.length
 for (let i = 0; i < lunghezzaArray; i++)  {
@@ -13,13 +14,19 @@ for (let i = 0; i < lunghezzaArray; i++)  {
     console.log(emailsCorrenti)
 
 // - stampiamo un messaggio appropriato
-    if (emailsCorrenti == emailUtente) {
-        console.log(' accesso consentito')
-        //   - SE l'email è presente:
+    if (emailsCorrenti === emailUtente) {
+        isEmailFound = true
+//   - SE l'email è presente:
 //     - accesso confermato
-    } else {
-        console.log('accesso negato')
-        //   - ALTRIMENTI 
+    
+//   - ALTRIMENTI 
 //     - accesso negato
-    }
+} }
+
+if (isEmailFound === true) {
+    console.log('accesso consentito')
+
+} else {
+    console.log('accesso negato') 
 }
+console.log(isEmailFound)
